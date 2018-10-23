@@ -58,7 +58,6 @@ router.post('/', (req, res, next) => {
       .insert(newMovie)
       .returning('*')
       .then(([postedRecord]) => {
-        console.log(postedRecord)
         res.status(201).json(postedRecord)
       })
       .catch(err => {
@@ -90,6 +89,7 @@ router.patch('/:id', (req, res, next) => {
           .update(patchedRecord)
           .where('id', id)
           .returning('*')
+          .orderBy('id')
           .then(([updatedRecord]) => {
             res.status(201).json(updatedRecord)
           })
