@@ -1,8 +1,33 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.card.mt-2.mx-auto {
+  max-width: 250px;
+  min-width: 250px;
 }
 
-a {
-  color: #00B7FF;
+.editor:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#text-editor, #add-movie-card {
+  min-width: 500px;
+}
+
+form, h5.card-title {
+  padding: .5em;
+}
+
+.navbar {
+  background-color: #343a40;
+  border-radius: .25em;
+}
+
+span.navbar-brand.mb-0.h1 {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#form-cancel-btn {
+  margin-right: .5em;
 }

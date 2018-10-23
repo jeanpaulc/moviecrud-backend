@@ -7,9 +7,9 @@ const moviesRouter = require('./routes/movies')
 
 const app = express()
 
-const cors = require('cors')
-
-app.use(cors())
+// const cors = require('cors')
+//
+// app.use(cors())
 
 app.use(logger('dev'))
 app.use(express.json())

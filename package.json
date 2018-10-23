@@ -29,14 +29,5 @@
   "homepage": "https://github.com/jeanpaulc/moviecrud-backend#readme",
   "devDependencies": {
     "nodemon": "^1.18.4"
-  },
-  "engines": {
-    "node": "v7.7.2"
-  },
-  "scripts": {
-    "start": "node node ./bin/www",
-    "knex": "knex",
-    "heroku-postbuild": "knex migrate:rollback; knex migrate:latest; knex seed:run;",
-    "nodemon": "nodemon node ./bin/www"
   }
 }
